@@ -5,19 +5,12 @@ import Result from './Components/Result'
 const people = fetch("https://swapi.co/api/people")
     .then(data => data.json())
     .then(data => {
-       data.results
+       // json data
+       console.log(data)
     })
 
 class App extends Component {
-  // _people() {
-  //   fetch(people)
-  //     .then(data => data.json())
-  //     .then(data => {
-  //       data.results.map(person => {
-  //         return `<li>${person}</li>`
-  //       })
-  //     })
-  // }
+
   render() {
     return (
       <div className="App">
