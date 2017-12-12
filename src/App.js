@@ -37,7 +37,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Result removeItem={this.removeItem} items={this.state.data}/>
+        <Result removeItem={this.removeItem}
+                items={this.state.data}
+                isLoading={this.state.isLoading}
+                />
       </div>
     );
   }

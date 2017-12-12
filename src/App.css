@@ -26,3 +26,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.item-list {
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 40px 40px;
+}
